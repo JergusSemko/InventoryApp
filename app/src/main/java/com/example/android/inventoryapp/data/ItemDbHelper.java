@@ -35,7 +35,8 @@ public class ItemDbHelper extends SQLiteOpenHelper{
                 + ItemEntry.COLUMN_PRICE + " INTEGER NOT NULL, "
                 + ItemEntry.COLUMN_QUANTITY + " INTEGER NOT NULL DEFAULT 0, "
                 + ItemEntry.COLUMN_SUPPLIER_NAME + " TEXT NOT NULL, "
-                + ItemEntry.COLUMN_SUPPLIER_PHONE_NUMBER + " INTEGER NOT NULL);";
+                + ItemEntry.COLUMN_PHONE_NUMBER + " INTEGER NOT NULL,"
+                + ItemEntry.COLUMN_DESCRIPTION + " TEXT NOT NULL);";
 
         // Execute the SQL statement.
         db.execSQL(SQL_CREATE_ITEMS_TABLE);
