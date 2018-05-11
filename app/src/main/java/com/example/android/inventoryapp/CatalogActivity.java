@@ -138,6 +138,7 @@ public class CatalogActivity extends AppCompatActivity implements
                 ItemContract.ItemEntry._ID,
                 ItemContract.ItemEntry.COLUMN_PRODUCT_NAME,
                 ItemContract.ItemEntry.COLUMN_PRICE,
+                ItemContract.ItemEntry.COLUMN_QUANTITY,
                 ItemContract.ItemEntry.COLUMN_SUPPLIER_NAME,
                 ItemContract.ItemEntry.COLUMN_PHONE_NUMBER,
                 ItemContract.ItemEntry.COLUMN_DESCRIPTION};
