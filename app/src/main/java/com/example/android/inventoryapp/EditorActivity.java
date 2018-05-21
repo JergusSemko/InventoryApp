@@ -139,6 +139,22 @@ public class EditorActivity extends AppCompatActivity implements
         mSupplierEditText.setOnTouchListener(mTouchListener);
         mPhoneEditText.setOnTouchListener(mTouchListener);
         mDescriptionEditText.setOnTouchListener(mTouchListener);
+
+        // Increase the quantity.
+        mItemAddButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                IncQuantity();
+            }
+        });
+
+        // Decrease the quantity.
+        mItemRemoveButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DecQuantity();
+            }
+        });
     }
 
     /**

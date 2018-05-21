@@ -2,13 +2,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="@color/colorListBackground"
     android:descendantFocusability="blocksDescendants"
     android:orientation="horizontal"
-    android:background="@color/colorListBackground"
     android:padding="@dimen/general_margin">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:orientation="vertical">
@@ -16,36 +16,36 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorTextPrimary"
-                android:text="@string/category_product_name" />
+                android:text="@string/category_product_name"
+                android:textColor="@color/colorTextPrimary" />
 
             <TextView
                 android:id="@+id/tv_item_name"
                 style="@style/TextView"
-                android:textColor="@color/colorTextHint"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:textColor="@color/colorTextHint" />
 
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorTextPrimary"
-                android:text="@string/category_price" />
+                android:text="@string/category_price"
+                android:textColor="@color/colorTextPrimary" />
 
             <TextView
                 android:id="@+id/tv_price"
@@ -56,15 +56,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:textColor="@color/colorTextPrimary"
-                android:text="@string/category_quantity" />
+                android:text="@string/category_quantity"
+                android:textColor="@color/colorTextPrimary" />
 
             <TextView
                 android:id="@+id/tv_quantity"
@@ -74,8 +74,8 @@
     </LinearLayout>
 
     <Button
-        style="@style/ButtonSale"
         android:id="@+id/button_sale"
+        style="@style/ButtonSale"
         android:focusable="false"
         android:text="@string/sale_button_text" />
 
