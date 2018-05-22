@@ -304,8 +304,6 @@ public class EditorActivity extends AppCompatActivity implements
             case R.id.action_save:
                 // Save item to database
                 saveItem();
-                //Exit activity.
-                finish();
                 return true;
             // Respond to a click on the "Delete" menu option.
             case R.id.action_delete:
